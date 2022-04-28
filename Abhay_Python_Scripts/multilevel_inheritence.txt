@@ -1,0 +1,54 @@
+# multilevel inheritence
+
+class car:
+
+    def __init__(self):
+        self.speed=450
+        self.color="red"
+        self.enginee="2000c"
+        self.name="dezire"
+
+    def show_feature(self):
+        print("car detail : ",self.speed,self.color,self.enginee)
+
+    def car_info(self):
+        print("initial car details : ",self.name)
+
+class Audi_car(car):
+
+    def __init__(self):
+        super().__init__()
+        self.speed=400
+        self.color="blue"
+        self.enginee="3000c"
+        self.name="Audi"
+
+    def show_feature(self):
+        print("car detail : ", self.speed, self.color, self.enginee)
+
+class audi_updated(Audi_car):
+    def __init__(self,speed,enginee):
+        super().__init__()
+        self.speed=speed
+        self.enginee=enginee
+
+    def updated_feature(self):
+        print("updated feature : ",self.speed,self.enginee)
+
+
+# parent_obj=car()
+# parent_obj.car_info()
+#
+# child_obj=Audi_car()
+# child_obj.show_feature()
+
+obj=audi_updated(450,"3000cc")
+obj.updated_feature()
+
+
+
+
+
+
+
+

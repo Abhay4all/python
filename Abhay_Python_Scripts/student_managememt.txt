@@ -1,0 +1,31 @@
+student_list=[]
+
+def add_student():
+
+    name=input("Enter the name of Student ")
+    roll_no=int(input("Enter the Roll no of student "))
+    age=int(input("Enter the age of student "))
+
+    student_list.append([name,roll_no,age])
+
+    for s in student_list:
+        print(s)
+
+while(True):
+
+    print("""
+    1: Add Student
+    2: delete student
+    3: update student
+    4: Read All Student
+    5: Quit
+    """)
+
+    user_choice=int(input("Enter your choice "))
+
+    if user_choice == 1:
+        add_student()
+    elif user_choice==5:
+        quit()
+
+

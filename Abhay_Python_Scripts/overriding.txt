@@ -1,0 +1,23 @@
+class car:
+    def __init__(self):
+        self.speed=250
+        self.color="blue"
+        self.enginee="2500cc"
+
+    def show_feature(self):
+        print("Speed is {} and color is {} and enginee is {}".format(self.speed,self.color,self.enginee))
+
+class audi(car):
+    def __init__(self,speed,enginee,color):
+        super().__init__()
+        self.enginee=enginee
+        self.color=color
+        self.speed=speed
+
+car_obj=car()
+
+car_obj.show_feature()
+
+audi_obj=audi(600,"5000","yellow")
+
+audi_obj.show_feature()

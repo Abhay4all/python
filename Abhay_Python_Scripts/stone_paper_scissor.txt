@@ -1,0 +1,51 @@
+
+import random
+
+
+
+def cpu_beat(b,c,counter):
+    print("cpu's", b, "your's", c)
+    print("counter : ",counter)
+
+def you_beat(b,c,counter):
+    print("your's", b, "beat cpu's", c)
+    print("counter : ", counter)
+
+
+def mainLoop():
+
+    a=["stone","paper","scissor"]
+    b = random.choice(a)
+    counter=0
+
+    while(True):
+
+        c = input("Enter your input : ")
+
+        if(c.lower()==b.lower()):
+            print("Match :::  tie")
+        elif(c.lower()=="stone" and b.lower()=="paper"):
+            counter -= 1
+            cpu_beat(b,c,counter)
+        elif(c.lower()=="stone" and b.lower()=="scissor"):
+            counter -= 1
+            cpu_beat(b,c,counter)
+        elif(c.lower()=="scissor" and b.lower()=="paper"):
+            counter -= 1
+            cpu_beat(b,c,counter)
+        elif (c.lower()=="paper" and b.lower()=="stone"):
+            counter += 1
+            you_beat(b,c,counter)
+        elif (c.lower()=="scissor" and b.lower()=="stone"):
+            counter += 1
+            you_beat(b,c,counter)
+        elif (c.lower()=="paper" and b.lower()=="scissor"):
+            counter += 1
+            you_beat(b,c,counter)
+
+        else :
+            print("Enter value only in paper, scissor, stone")
+
+        b=random.choice(a)
+
+mainLoop()

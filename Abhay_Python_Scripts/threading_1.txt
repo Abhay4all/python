@@ -1,0 +1,23 @@
+import threading
+
+def job_1():
+    print("This is job 1")
+    for i in range(10):
+        for j in range(10):
+            k=i+j
+            print("job 1 : K : {}".format(k))
+    print("Job 1 is completed")
+
+def job_2():
+    print("this is job 2")
+    for i in range(20):
+        for j in range(10):
+            k=i+j
+            print("job 2 : K : {}".format(k))
+    print("job 2 is completed")
+
+t1=threading.Thread(target=job_1)
+t2=threading.Thread(target=job_2)
+
+t1.start()
+t2.start()

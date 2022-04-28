@@ -1,0 +1,29 @@
+# single level inheritence
+
+# Base class/Parent class
+class Employee:
+    def __init__(self):
+        self.company="HCL"
+        self.dept="IT"
+        self.designation='Developer'
+
+# Inheritence
+# sub class/child class
+
+class Emp_1(Employee):
+    def __init__(self,name,salary,id):
+        self.id=id
+        self.name=name
+        self.salary=salary
+        super().__init__()
+
+
+    def common_detail(self):
+        print("Common details : ",self.company,self.designation,self.dept)
+
+    def person_detail(self):
+        print("person details : ",self.id,self.name,self.salary)
+
+obj=Emp_1("abhay",45,2)
+obj.common_detail()
+obj.person_detail()

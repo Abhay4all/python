@@ -1,0 +1,28 @@
+# multiple inheritence
+
+class Bank:
+    def __init__(self):
+        self.name="ICICI"
+        self.branch="Kharadi"
+        self.ifsc="100"
+
+class Account:
+    def __init__(self):
+        self.acc_type="saving"
+        self.balance="500000"
+
+class Customer(Bank,Account):
+    def __init__(self,user_name,pin):
+        self.user_name=user_name
+        self.pin=pin
+        Account.__init__(self)
+        Bank.__init__(self)
+
+    def print_customer(self):
+        print("Username : {} AND Name : {}".format(self.user_name,self.name))
+        print("Branch : {} AND IFSC : {}".format(self.branch,self.ifsc))
+
+obj=Customer("Abhay",1111)
+
+obj.print_customer()
+
