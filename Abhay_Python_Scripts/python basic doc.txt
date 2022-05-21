@@ -1,0 +1,53 @@
+List is the most basic Data Structure in python. List is a mutable data structure i.e items can be added to list later after the list creation. It’s like you are going to shop at the local market and made a list of some items and later on you can add more and more items to the list.
+append() function is used to add data to the list.
+
+
+Python | Set 3 (Strings, Lists, Tuples, Iterations)
+Difficulty Level : Easy
+Last Updated : 28 Jun, 2021
+In the previous article, we read about the basics of Python. Now, we continue with some more python concepts.
+
+Strings in Python 
+A string is a sequence of characters. It can be declared in python by using double-quotes. Strings are immutable, i.e., they cannot be changed.
+
+
+
+Lists in Python 
+Lists are one of the most powerful tools in python. They are just like the arrays declared in other languages. But the most powerful thing is that list need not be always homogeneous. A single list can contain strings, integers, as well as objects. Lists can also be used for implementing stacks and queues. Lists are mutable, i.e., they can be altered once declared.
+
+
+
+Tuples in Python 
+A tuple is a sequence of immutable Python objects. Tuples are just like lists with the exception that tuples cannot be changed once declared. Tuples are usually faster than lists.
+
+
+Iterations in Python 
+Iterations or looping can be performed in python by ‘for’ and ‘while’ loops. Apart from iterating upon a particular condition, we can also iterate on strings, lists, and tuples.
+
+
+
+
+
+Lists are just like dynamically sized arrays, declared in other languages (vector in C++ and ArrayList in Java). Lists need not be homogeneous always which makes it the most powerful tool in Python. A single list may contain DataTypes like Integers, Strings, as well as Objects. Lists are mutable, and hence, they can be altered even after their creation.
+
+List in Python are ordered and have a definite count. The elements in a list are indexed according to a definite sequence and the indexing of a list is done with 0 being the first index. Each element in the list has its definite place in the list, which allows duplicating of elements in the list, with each element having its own distinct place and credibility.
+
+
+Dictionary in Python is an unordered collection of data values, used to store data values like a map, which, unlike other Data Types that hold only a single value as an element, Dictionary holds key:value pair. Key-value is provided in the dictionary to make it more optimized. 
+ 
+
+Note – Keys in a dictionary don’t allow Polymorphism.
+
+Disclamer: It is important to note that Dictionaries have been modified to maintain insertion order with the release of Python 3.7, so they are now ordered collection of data values.
+
+Creating a Dictionary
+In Python, a Dictionary can be created by placing a sequence of elements within curly {} braces, separated by ‘comma’. Dictionary holds pairs of values, one being the Key and the other corresponding pair element being its Key:value. Values in a dictionary can be of any data type and can be duplicated, whereas keys can’t be repeated and must be immutable. 
+ 
+
+Note – Dictionary keys are case sensitive, the same name but different cases of Key will be treated distinctly. 
+
+
+
+
+Try and Except Statement – Catching Exceptions
+Try and except statements are used to catch and handle exceptions in Python. Statements that can raise exceptions are kept inside the try clause and the statements that handle the exception are written inside except clause.
